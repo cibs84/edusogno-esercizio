@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+require_once 'headerInclude.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edusogno</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+// SE l'utente è loggato ALLORA viene reindirizzato alla 'pagina-personale.php'
+if (isUserLoggedin()) {
+    header('Location: pages/pagina-personale.php');
+    exit;
+// ALTRIMENTI verrà reindirizzato alla pagina 'log-in.php'
+} else {
+    header('Location: pages/log-in.php');
+    exit;
+}

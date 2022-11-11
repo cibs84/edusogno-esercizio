@@ -1,0 +1,148 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* COMMONS */
+body {
+    background-color: #d9e5f3;
+    font-family: 'Noto Sans', Georgia, Helvetica, sans-serif;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.row .col {
+    width: calc(100%/3);
+    min-width: 21rem;
+    padding: 0 1rem;
+}
+button {
+    cursor: pointer;
+}
+.alert {
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+    margin: -1.5rem 0 1.5rem;
+}
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+}
+
+
+/* HEADER */
+header {
+    background-color: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0 9px 18px 0 rgb(0 100 255 / 40%);
+}
+header .logo {
+    width: 9rem;
+    margin: 2.5rem;
+    margin-bottom: 2rem;
+    filter:  brightness(0);
+}
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    margin-right: 3rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #134077;
+}
+
+
+/* MAIN */
+main {
+    padding: 5rem 0;
+}
+main h1 {
+    color: #134077;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+/* Form */
+main form,
+main .event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #134077;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+main form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+main form .form-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+main form label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+main form input {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+main form input::placeholder {
+    color: lightgrey;
+}
+main form input:focus {
+    outline: none;
+}
+main form #togglePassword {
+    color: #0057ff;
+    cursor: pointer;
+    position: absolute;
+    right: 0.5rem;
+    top: 2rem;
+}
+main form button,
+main .event-card button {
+    background-color: #0057ff;
+    color: white;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+main form a {
+    text-align: center;
+    font-size: 0.8rem;
+}
+/* Event Card */
+main .event-card {
+    margin-top: 2rem;
+}
+main .event-card .title {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+main .event-card .date-time {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 1rem;
+}
+main .event-card button {
+    margin-bottom: 0;
+}
